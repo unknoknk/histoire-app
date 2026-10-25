@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Histoire sign-in</title>
+<style>body{font-family:Georgia,serif;max-width:720px;margin:40px auto;padding:0 16px;color:#2b1d0e;background:#f6efe2}</style></head><body>
+<p>Returning to the Histoire desktop app…</p>
+<script>
+// Relais OAuth Instagram : Meta exige une adresse https ; on renvoie le code à l'outil local.
+location.replace("http://localhost:8766/callback" + location.search);
+</script>
+</body></html>
