@@ -1,6 +1,110 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>body{font-family:Georgia,serif;max-width:720px;margin:40px auto;padding:0 16px;line-height:1.6;color:#2b1d0e;background:#f6efe2}h1{color:#7a1712}a{color:#7a1712}</style><title>Histoire</title></head><body>
-<h1>Histoire</h1>
-<p>Histoire is a personal desktop tool. Its owner uses it to publish short history videos, made on their own computer, to their own TikTok, Instagram and YouTube accounts.</p>
-<p>The tool signs in with TikTok (Login Kit) and sends the finished video with the Content Posting API. There are no other users, no accounts and no ads.</p>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Histoire — publish your short history videos</title>
+<meta name="description" content="Histoire is a desktop app for publishing short history videos: sign in with TikTok, preview the video, write the caption, choose who can see it and publish.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+:root{--bg:#17100b;--panel:#2a2018;--line:#4a3a28;--ink:#ecdfc3;--soft:#b9a98a;--gold:#d4a85a;--red:#7a1712}
+*{box-sizing:border-box}
+body{margin:0;font-family:Georgia,"Times New Roman",serif;line-height:1.6;color:var(--ink);background:var(--bg)}
+a{color:var(--gold)}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding-top:14px;padding-bottom:14px}
+header img{width:48px;height:48px;border-radius:11px}
+.brand{font-size:1.5rem;color:var(--gold);font-weight:bold;margin-right:auto}
+nav a{margin-left:18px;text-decoration:none;font-size:.95rem}
+nav a:first-child{margin-left:0}
+.hero{display:flex;gap:36px;align-items:center;flex-wrap:wrap;padding:48px 0 32px}
+.hero .txt{flex:1 1 380px}
+.hero img.logo{width:200px;height:200px;border-radius:44px;flex:0 0 auto}
+h1{font-size:2.2rem;line-height:1.2;margin:0 0 14px;color:var(--ink)}
+h2{font-size:1.5rem;color:var(--gold);margin:44px 0 14px;border-bottom:1px solid var(--line);padding-bottom:6px}
+h3{margin:0 0 6px;font-size:1.1rem;color:var(--ink)}
+.lead{font-size:1.15rem;color:var(--soft)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px}
+.card p{margin:0;color:var(--soft)}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0}
+.steps li{counter-increment:s;position:relative;padding:0 0 16px 48px}
+.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:32px;height:32px;border-radius:50%;background:var(--gold);color:var(--bg);font-weight:bold;text-align:center;line-height:32px}
+.split{display:flex;gap:32px;flex-wrap:wrap;align-items:flex-start}
+.split>div{flex:1 1 340px}
+.shot{max-width:100%;width:420px;border:1px solid var(--line);border-radius:12px;display:block}
+table{border-collapse:collapse;width:100%}
+td,th{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{color:var(--gold)}
+code{color:var(--gold)}
+footer{border-top:1px solid var(--line);margin-top:56px;padding:22px 0 40px;color:var(--soft);font-size:.95rem}
+footer a{margin-right:18px}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<img src="icon-512.png" alt="Histoire app icon">
+<span class="brand">Histoire</span>
+<nav><a href="#features">Features</a><a href="#how">How it works</a><a href="#tiktok">TikTok</a><a href="#faq">FAQ</a><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a></nav>
+</div></header>
+
+<main class="wrap">
+<section class="hero">
+<div class="txt">
+<h1>Publish your short history videos, from your desktop</h1>
+<p class="lead">Histoire is a desktop app for publishing short history videos. Sign in with your TikTok account, preview the finished video, write the caption, choose who can see it, and publish. The same app also posts to Instagram Reels and YouTube Shorts.</p>
 <p><a href="terms.html">Terms of Service</a> · <a href="privacy.html">Privacy Policy</a> · <a href="data-deletion.html">Data deletion</a></p>
-</body></html>
+</div>
+<img class="logo" src="icon-512.png" alt="Histoire app icon">
+</section>
+
+<h2 id="features">Features</h2>
+<div class="grid">
+<div class="card"><h3>Sign in with TikTok</h3><p>Sign-in uses TikTok Login Kit. The app shows the avatar and name of the connected account, and you can switch account at any time.</p></div>
+<div class="card"><h3>Preview before you post</h3><p>Pick a finished video from your computer and watch it inside the app before anything is sent.</p></div>
+<div class="card"><h3>You decide every setting</h3><p>Caption, audience, comments, Duet and Stitch are chosen by you for each video. Nothing is pre-selected on your behalf.</p></div>
+<div class="card"><h3>Content disclosure</h3><p>Declare AI-generated content, your own brand, or branded content, with the matching TikTok labels.</p></div>
+<div class="card"><h3>Direct post or draft</h3><p>Publish straight to your profile, or send the video to your TikTok inbox and finish the post in the TikTok app.</p></div>
+<div class="card"><h3>Local by design</h3><p>The app runs on your computer. Sign-in tokens stay in local files and no data goes to any server other than the platform's.</p></div>
+</div>
+
+<h2 id="how">How it works</h2>
+<div class="split">
+<div>
+<ol class="steps">
+<li><h3>Connect your account</h3>Click “Continue with TikTok” and approve the access request on TikTok's own page.</li>
+<li><h3>Choose a video</h3>Select the finished video and check it in the built-in player.</li>
+<li><h3>Write the caption and set the options</h3>Choose who can see the video, allow or block comments, Duet and Stitch, and tick the disclosure boxes that apply.</li>
+<li><h3>Publish</h3>The app uploads the video with the Content Posting API and shows the result once TikTok has processed it.</li>
+</ol>
+</div>
+<div><img class="shot" src="shot-compose.png" alt="Histoire publishing screen: video preview, caption, audience, interaction settings and content disclosure"></div>
+</div>
+
+<h2 id="tiktok">How Histoire uses TikTok</h2>
+<table>
+<tr><th>Product / scope</th><th>What the app does with it</th></tr>
+<tr><td>Login Kit · <code>user.info.basic</code></td><td>Shows the avatar and display name of the connected account, so you know where the video will be posted.</td></tr>
+<tr><td>Content Posting API · <code>video.publish</code></td><td>Publishes the video you selected to your profile, with the caption and settings you chose.</td></tr>
+<tr><td>Content Posting API · <code>video.upload</code></td><td>Sends the video to your TikTok inbox as a draft, when you choose that mode.</td></tr>
+</table>
+<p>The app never posts without an explicit click on the publish button, and it does not read your videos, followers or messages.</p>
+
+<h2 id="faq">FAQ</h2>
+<div class="grid">
+<div class="card"><h3>What kind of videos is it for?</h3><p>Short vertical history videos: animated maps, public-domain paintings and photographs, narration and word-by-word captions.</p></div>
+<div class="card"><h3>Where is my data stored?</h3><p>On your computer only. See the <a href="privacy.html">Privacy Policy</a>.</p></div>
+<div class="card"><h3>How do I disconnect?</h3><p>Use “change” next to the account name, or remove Histoire in TikTok under Settings and privacy, Security, Apps and services. See <a href="data-deletion.html">Data deletion</a>.</p></div>
+<div class="card"><h3>How can I contact you?</h3><p>Write to <a href="mailto:teerificlothes@gmail.com">teerificlothes@gmail.com</a>.</p></div>
+</div>
+</main>
+
+<footer><div class="wrap">
+<a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a><a href="data-deletion.html">Data deletion</a><a href="mailto:teerificlothes@gmail.com">Contact</a>
+<p>© 2026 Histoire</p>
+</div></footer>
+</body>
+</html>
